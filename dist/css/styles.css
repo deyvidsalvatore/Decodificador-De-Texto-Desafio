@@ -184,8 +184,20 @@ button.btn__decrypt {
     pointer-events: none;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 480px) {
     main {
+=======
+footer {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+>>>>>>> f141663a30bdc6e8665d5d44742b4e490596560d
         flex-direction: column;
         gap: 10px;
     }
@@ -219,10 +231,13 @@ button.btn__decrypt {
         padding: 20px;
     }
 
+<<<<<<< HEAD
     .right-side__without-return img {
         display: none;
     }
 
+=======
+>>>>>>> f141663a30bdc6e8665d5d44742b4e490596560d
     footer {
         margin-top: auto;
         margin-top: 20px;
@@ -231,7 +246,11 @@ button.btn__decrypt {
 
 /* Para telas menores que 768px */
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
     main {
+=======
+    .main {
+>>>>>>> f141663a30bdc6e8665d5d44742b4e490596560d
         flex-direction: column;
         gap: 10px;
     }
