@@ -1,6 +1,8 @@
 # Decodificador de Texto - Challenge 1
 Durante estas duas semanas, vamos trabalhar em uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
 
+# Link Github Pages
+* https://deyvidsalvatore.github.io/Decodificador-De-Texto-Desafio/
 # Modelo principal do Figma
 <a href="https://www.figma.com/file/iLVTPx4iqP7XfdiGwoOEcf/Alura-Challenge---Desafio-1---L%C3%B3gica?type=design&node-id=2%3A213&mode=design&t=e8idH57pdzaUZtgb-1">![Figma Logo](docs/figma.png) Acesse o modelo aqui</a>
 
