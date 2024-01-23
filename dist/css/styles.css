@@ -19,14 +19,255 @@
     --gray-300: #868E96;
     --gray-400: #485057;
     --gray-500: #343A40;
+
+    --gray-decrypt: #D8DFE8;
 }
 
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
-    font-family: "Inter", sans-serif;
     background-color: var(--light-blue-100);
+}
+
+header {
+    padding: 10px 0;
+}
+
+.head {
+    margin-top: 20px;
+    padding: 0 10vh;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-bottom: 80px;
+}
+
+.left-side {
+    width: 60%;
+    max-width: 100%;
+    padding-top: 40px;
+}
+
+
+form {
+    padding-top: 60px;
+    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 148px);
+}
+
+form textarea {
+    width: 100%;
+    border: none;
+    font-family: "Inter";
+    outline: none;
+    color: var(--dark-blue-300);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+form textarea::placeholder {
+    color: var(--dark-blue-300);
+}
+
+.alert-warning {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: var(--gray-400);
+    opacity: 0.8;
+    margin: 0 0 16px 8px;
+}
+
+.alert-warning img {
+    margin-bottom: -4px;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+}
+
+.left-side__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button.btn__encrypt {
+    background-color: var(--dark-blue-300);
+    color: #fff;
+}
+
+button.btn__decrypt {
+    background-color: var(--gray-decrypt);
+
+}
+.right-side {
+    width: 40%;
+    height: 680px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.521);
+    border-radius: 32px;
+    margin: 40px 40px 40px 100px;
+    padding: 25px;
+}
+
+/* Encrypted text */
+.right-side__with-return p{
+    overflow: auto;
+}
+
+.right-side__with-return {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side__with-return p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--gray-400);
+}
+
+.right-side__without-return img {
+    margin: 150px 32px 0 0;
+}
+.right-side__without-return .title{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--gray-500);
+    margin: 32px 32px 32px 16px;
+}
+
+.right-side__without-return p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-400);
+}
+
+.show-none {
+    display: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    form textarea {
+        height: 200px;
+    }
+
+    .left-side__buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .right-side__without-return img {
+        display: none;
+    }
+
+    footer {
+        margin-top: auto;
+        margin-top: 20px;
+    }
+}
+
+/* Para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    form textarea {
+        height: 200px;
+    }
+
+    .left-side__buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    footer {
+        margin-top: auto;
+        margin-top: 20px;
+    }
+
 }
