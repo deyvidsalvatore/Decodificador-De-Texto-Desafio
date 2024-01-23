@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="assets/imgs/alura-logo.svg" alt="Logo da alura">
+        </div>
+    </header>
+    <main>
+        <!-- Left side of the page -->
+        <div class="left-side">
+            <form>
+                <textarea id="main-text" type="text" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="alert-warning">
+                        <img src="assets/icons/warning-icon.svg" alt="Icone de Warning">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="left-side__buttons">
+                        <button class="btn__encrypt" id="crypt">Criptografar</button>
+                        <button class="btn__decrypt" id="descrypt">Descriptografar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Right side of the page-->
+        <div class="right-side">
+            <div class="right-side__without-return">
+                <img src="assets/imgs/boy_looking_vector.svg" id="message-not-found" alt="Garoto olhando pela lupa um diamante">
+                <h3 class="title">Nenhuma mensagem encontrada.</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div class="right-side__with-return">
+                <p></p>
+                <button class="btn__copy" id="copy">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Desafio realizado por <a target="_blank" href="https://github.com/deyvidsalvatore">Deyvid Santos</a>
+    </footer>
+    
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
